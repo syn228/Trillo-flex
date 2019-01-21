@@ -63,6 +63,23 @@
 // User Navigation
 .user-nav {
   background-color: navy;
+  align-self: stretch;
+
+  display: flex;
+  align-items: center;
+
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
   &__icon-box {
 
   }
@@ -77,7 +94,7 @@
   }
 
   &__user {
-
+    
   }
 
   &__user-photo {
